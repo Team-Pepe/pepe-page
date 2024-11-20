@@ -1,0 +1,456 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: rgba(20, 33, 49, 0.842);
+    min-width: 360px;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 16pt;
+}
+
+main{
+    margin: 24px ;
+}
+
+input{
+    border-radius: 5px;
+    display: block;
+    height: 30px;
+    margin-bottom: 24px;
+    width: 75%;
+}
+
+textarea{
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 24px;
+    width: 75%;
+}
+
+select{
+    width: 76%;
+    font-size: 14pt;
+    height: 42px;
+    margin-bottom: 24px;
+    border-radius: 10px;
+}
+
+select:hover{
+    border: none;
+    background-color: #e0f7fa;
+    border: 2px solid black;
+
+}
+.edit-category:hover{
+    border: none;
+    background-color: #dfe6e9;
+    border: 2px solid black;
+}
+
+.button-div button{
+    width: 200px;
+    height: 36px;
+    display: block;
+    width: 100%;
+    margin-bottom: 12px;
+}
+/* Contenedor principal para las tres columnas */
+.main-container {
+    display: flex;
+    gap: 20px;
+}
+
+/* Estilo para cada columna */
+.column {
+    flex: 1;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    min-height: 400px;
+}
+
+/* Columna de formulario */
+#taskFormContainer {
+    background-color: #e0f7fa;
+}
+
+/* Columna de lista de tareas */
+#taskListContainer {
+    background-color: #f1f8e9;
+}
+
+/* Columna extra */
+#extraColumn {
+    background-color: #f3e5f5;
+    word-wrap: break-word; 
+    overflow-wrap: break-word; 
+    white-space: normal;
+}
+
+/* Estilo para artículos de tareas */
+#taskContainer article {
+    background-color: #dfe6e9;
+    padding: 16px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+}
+
+.title-edit:hover{
+    border: none;
+    background-color: #dfe6e9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.content-edit:hover{
+    border: none;
+    background-color: #dfe6e9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.save{
+    background-color: white;
+    color: green;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid green;
+}
+
+.save:hover{
+    border: none;
+    background-color: green;
+    color: white;
+}
+
+.edit-task{
+    background-color: white;
+    border: 1px solid green;
+    color: green;
+    display: block;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 10px; 
+    font-weight: bold;
+}
+
+.edit-task:hover{
+    background-color: green;
+    
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+.clear{
+
+    border: 1px solid rgb(11, 173, 238);
+    background-color: white;
+    color: rgb(11, 173, 238);
+
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.clear:hover{
+    background-color: rgb(11, 173, 238);
+    border: none;
+    color: white;
+    
+}
+
+.delete{
+    background-color: white;
+    border: 1px solid rgb(255, 31, 31, 0.836);
+    color: red;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.delete:hover{
+    background-color: red;
+    border: none;
+    color: white;
+}
+.delete-task{
+    background-color: white;
+    border: 1px solid rgb(255, 31, 31, 0.836);
+    color: red;
+    display: block;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.delete-task:hover{
+    background-color: red;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+.readonly {
+    background-color: #dfe6e9;
+    cursor: not-allowed;
+    pointer-events: none; /* Evita la interacción */
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 24px;
+    width: 75%;
+    
+}  
+
+article{
+    background-color: rgb(215, 219, 223);
+    margin-bottom: 24px;
+    padding: 24px 36px;
+    width: 500px;
+}
+
+.news-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.news-container  a{
+    color: white;
+    display: block;
+    font-weight: bold;
+    text-align: end;
+}
+
+/*menu lateral*/
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; 
+    flex-wrap: wrap;
+    padding: 20px; 
+}
+
+.task-form,
+.calendar {
+    flex: 1; 
+    max-width: 45%; 
+    box-sizing: border-box;
+    background: #fff; 
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; 
+}
+
+/* calendario */
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.calendar-header button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.calendar-header h2 {
+    margin: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    width: 14.28%;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+thead th {
+    background: #f0f0f0;
+}
+
+tbody td {
+    height: 100px;
+    cursor: pointer;
+    vertical-align: top;
+}
+
+tbody td.today {
+    background: #fffae6;
+    border: 2px solid #f00; /* Borde rojo para resaltar el día actual */
+}
+
+tbody td:hover {
+    background: #f1f1f1;
+}
+
+/* El formulario de tareas */
+.task-form label,
+.task-form input,
+.task-form textarea,
+.task-form select,
+.task-form .button-div {
+    display: block;
+    width: 80%;
+    margin: 0 auto 20px auto; 
+}
+
+.task-form .button-div button {
+    width: 100%; 
+}
+
+@media (max-width: 576px) {
+    /* Estilos para dispositivos muy pequeños */
+    body {
+        font-size: 1.5rem;
+    }
+    .main-container {
+        flex-direction: column;
+        align-items: center;  
+        margin: 0 auto;  
+    }
+    .column {
+        flex: none;
+        width: 100%;
+    }
+    .task-form,
+    .calendar {
+        max-width: 100%;
+        width: 80%;
+        margin: 0 auto;  
+    }
+    article {
+        font-size: 0.9rem;
+    } 
+}
+
+
+@media (min-width: 576px) and (max-width: 767px) {
+    /* Estilos para la lista de tareas */
+    #taskListContainer, 
+    #taskContainerFinish {
+        overflow-y: auto; 
+        padding: 20px;
+    }
+
+  /* Estilos para los artículos de tareas */
+    #taskContainer article, 
+    #taskContainerFinish article {
+        background-color: #dfe6e9;
+        padding: 16px;
+        margin-bottom: 16px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 100%; 
+        box-sizing: border-box; 
+    }  
+    
+    body {
+        font-size: 1.8rem;
+    }
+    .main-container {
+        flex-direction: column;
+        align-items: center;  
+        margin: 0 auto;  
+        max-width: 85%;  
+    }
+    .column {
+        flex: none;
+        width: 100%;
+    }
+    .task-form,
+    .calendar {
+        max-width: 90%;
+        width: 90%;
+        margin: 0 auto;  
+    }
+    #calendarTable {
+        font-size: 20px;
+    }  
+    article {
+        font-size: 1.0rem;
+        width: 85%; 
+        margin: 20px auto; 
+    }
+
+}
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+    .button-div button{
+        display: inline-block;
+        width: 200px;
+    }
+    article {
+        font-size: 1.1rem;
+    }
+}
+
+
+/* tamaño del calendario */
+@media (min-width: 992px) {
+    .container {
+        display: grid; /* Usar Grid Layout */
+        grid-template-columns: 1fr 1fr; 
+        gap: 20px; 
+    }
+
+    .task-form,
+    .calendar {
+        margin-bottom: 0; 
+        max-width: 100%; 
+    }
+}
