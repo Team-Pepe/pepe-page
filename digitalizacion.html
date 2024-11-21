@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -23,55 +24,55 @@
     <main class="main-container" id="main">
         <!-- Columna 1: Formulario de Subir Inmobiliaria -->
         <section class="column" id="taskFormContainer">
-            <form id="taskForm" action="./assets/php/inmobiliaria.php" method="post">
+            <form id="taskFormInmobiliaria" action="./assets/php/inmobiliaria.php" method="post">
                 <h2>Subir Inmobiliaria</h2>
                 <div>
-                    <label for="title">Numero de Registro</label>
-                    <input type="text" name="title" id="title">
+                    <label for="nombre_item">Nombre inmueble</label>
+                    <input type="text" name="nombre_item" id="nombre_item" required>
                 </div>
                 <div>
-                    <label for="description">Nombre inmueble</label>
-                    <input type="text" name="title" id="title">
+                    <label for="registro">Descripción</label>
+                    <input type="text" name="registro" id="registro" required>
                 </div>
                 <div>
-                    <select name="category" id="category">
+                    <select name="id_categoria_alquiler" id="id_categoria_alquiler" required>
                         <option class="menu" value="" disabled selected>Categoria</option>
                         <option value="101">Inmobiliaria</option>
                         <option value="102">Lenceria</option>
-                        <option value="103">Mensaje</option>
+                        <option value="103">Menaje</option>
                         <option value="104">Decoracion artesanal</option>
                         <option value="105">Elementos de decoracion</option>
-                        </select>
+                    </select>
                 </div>
                 <div class="button-div">
-                    <button class="save" id="save" type="submit">Guardar Registro</button>
+                    <button class="save" id="saveInmobiliaria" type="submit">Guardar Registro</button>
                 </div>
             </form>
         </section>
         
         <!-- Columna 2: Formulario de Subir catering -->
         <section class="column" id="taskListContainer">
-            <form id="taskForm" action="./assets/php/catering.php" method="post">
+            <form id="taskFormCatering" action="./assets/php/catering.php" method="post">
                 <h2>Subir catering</h2>
                 <div>
-                    <label for="title">Nombre Categoria</label>
-                    <input type="text" name="title" id="title">
+                    <label for="nombre_categoria">Nombre Categoria</label>
+                    <input type="text" name="nombre_categoria" id="nombre_categoria" required>
                 </div>
                 <div>
-                    <label for="description">Receta</label>
-                    <textarea name="description" id="description" rows="10" cols="100"></textarea>
+                    <label for="receta">Receta</label>
+                    <textarea name="receta" id="receta" rows="10" cols="100" required></textarea>
                 </div>
                 <div>
-                    <select class="edit-category" name="category" id="category">
+                    <select class="edit-category" name="categoria" id="categoria" required>
                         <option class="menu" value="" disabled selected>Categoria</option>
                         <option value="201">Postre</option>
                         <option value="202">Plato fuerte</option>
                         <option value="203">Coctel</option>
                         <option value="204">Cobertura</option>
-                        </select>
+                    </select>
                 </div>
                 <div class="button-div">
-                    <button class="save" id="save" type="submit">Guardar Registro</button>
+                    <button class="save" id="saveCatering" type="submit">Guardar Registro</button>
                 </div>
             </form>
         </section>
