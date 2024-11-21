@@ -13,14 +13,14 @@ if ($conexion->connect_error) {
 }
 
 // Verificar que los datos del formulario están definidos
-if (isset($_POST['nombre_item'], $_POST['registro'], $_POST['id_categoria_alquiler'])) {
-    $nombre_item = $_POST['nombre_item'];
-    $registro = $_POST['registro'];
-    $id_categoria_alquiler = $_POST['id_categoria_alquiler'];
+if (isset($_POST['nombre_categoria'], $_POST['receta'], $_POST['id_categoria_catering'])) {
+    $nombre_categoria = $_POST['nombre_categoria'];
+    $receta = $_POST['receta'];
+    $id_categoria_catering  = $_POST['id_categoria_catering'];
 
     // Preparar y bindear
-    $stmt = $conexion->prepare("INSERT INTO almacen_alquiler (nombre_item, registro, id_categoria_alquiler) VALUES (?, ?, ?)");
-    $stmt->bind_param("ssi", $nombre_item, $registro, $id_categoria_alquiler);
+    $stmt = $conexion->prepare("INSERT INTO repositorio_catering (nombre, receta, id_categoria_catering) VALUES (?, ?, ?)");
+    $stmt->bind_param("ssi", $nombre_categoria, $receta, $id_categoria_catering);
 
     // Ejecutar la declaración
     if ($stmt->execute()) {
