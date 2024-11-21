@@ -11,57 +11,12 @@
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="index.html">Inicio</a>
-        <a href="crear_tareas.html">Subir Tarea</a>
-        <a href="lista_tareas.html">Lista de Tareas</a>
-        <a href="tareas_finalizadas.html">Tareas finalizadas</a>
         <a href="digitalizacion.html">digitalizacion items</a>
     </div>
 
     <header id="mainHeader">
         <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menú</span>
     </header>
-
-    <main class="main-container" id="main">
-        <!-- Columna 1: Formulario de tareas -->
-        <section class="column" id="taskFormContainer">
-            <form id="taskForm" action="">
-                <h2>Subir Tarea</h2>
-                <div>
-                    <label for="title">Nombre Tarea</label>
-                    <input type="text" name="title" id="title">
-                </div>
-                <div>
-                    <label for="description">Descripción</label>
-                    <textarea name="description" id="description" rows="10" cols="100"></textarea>
-                </div>
-                <div>
-                    <label for="categoria">Categoría</label>
-                    <input type="text" name="categoria" id="categoria">
-                </div>
-                <div>
-                    <select name="category" id="category">
-                        <option class="menu" value="" disabled selected>Asignar Tarea</option>
-                    </select>
-                </div>
-                <div class="button-div">
-                    <button class="save" id="save" type="submit">Asignar Tarea</button>
-                </div>
-            </form>
-        </section>
-    
-        <!-- Columna 2: Lista de tareas -->
-        <section class="column" id="taskListContainer">
-            <h2>Lista de Tareas</h2>
-            <input id="taskSearch" type="search" placeholder="Buscar tarea...">
-            <div id="taskContainer"></div>
-        </section>
-    
-        <!-- Columna 3: tareas finalizadas -->
-        <section class="column" id="extraColumn">
-            <h2>Tareas finalizadas</h2>
-            <div id="taskContainerFinish"></div>
-        </section>
-    </main>
 
     <footer></footer>
 
