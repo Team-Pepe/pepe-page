@@ -26,59 +26,37 @@
             <form id="taskForm" action="./assets/php/inmobiliaria.php" method="post">
                 <h2>Subir Inmobiliaria</h2>
                 <div>
-                    <label for="title">Nombre Tarea</label>
+                    <label for="title">Numero de Registro</label>
                     <input type="text" name="title" id="title">
                 </div>
                 <div>
-                    <label for="description">Descripción</label>
-                    <textarea name="description" id="description" rows="10" cols="100"></textarea>
-                </div>
-                <div>
-                    <label for="dueDate">Fecha de Vencimiento</label>
-                    <input type="date" name="dueDate" id="dueDate">
+                    <label for="description">Nombre inmueble</label>
+                    <input type="text" name="title" id="title">
                 </div>
                 <div>
                     <label for="categoria">Categoría</label>
                     <input type="text" name="categoria" id="categoria">
                 </div>
-                <div>
-                    <select name="category" id="category">
-                        <option class="menu" value="" disabled selected>Asignar Tarea</option>
-                    </select>
-                </div>
                 <div class="button-div">
-                    <button class="save" id="save" type="submit">Asignar Tarea</button>
+                    <button class="save" id="save" type="submit">Guardar Registro</button>
                 </div>
             </form>
         </section>
         
         <!-- Columna 2: Formulario de Subir catering -->
-        <section class="column" id="taskFormContainer">
+        <section class="column" id="taskListContainer">
             <form id="taskForm" action="./assets/php/catering.php" method="post">
                 <h2>Subir catering</h2>
                 <div>
-                    <label for="title">Nombre Tarea</label>
+                    <label for="title">Nombre Categoria</label>
                     <input type="text" name="title" id="title">
                 </div>
                 <div>
-                    <label for="description">Descripción</label>
+                    <label for="description">Receta</label>
                     <textarea name="description" id="description" rows="10" cols="100"></textarea>
                 </div>
-                <div>
-                    <label for="dueDate">Fecha de Vencimiento</label>
-                    <input type="date" name="dueDate" id="dueDate">
-                </div>
-                <div>
-                    <label for="categoria">Categoría</label>
-                    <input type="text" name="categoria" id="categoria">
-                </div>
-                <div>
-                    <select name="category" id="category">
-                        <option class="menu" value="" disabled selected>Asignar Tarea</option>
-                    </select>
-                </div>
                 <div class="button-div">
-                    <button class="save" id="save" type="submit">Asignar Tarea</button>
+                    <button class="save" id="save" type="submit">Guardar Registro</button>
                 </div>
             </form>
         </section>
