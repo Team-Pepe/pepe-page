@@ -34,8 +34,14 @@
                     <input type="text" name="title" id="title">
                 </div>
                 <div>
-                    <label for="categoria">Categoría</label>
-                    <input type="text" name="categoria" id="categoria">
+                    <select name="category" id="category">
+                        <option class="menu" value="" disabled selected>Categoria</option>
+                        <option value="101">Inmobiliaria</option>
+                        <option value="102">Lenceria</option>
+                        <option value="103">Mensaje</option>
+                        <option value="104">Decoracion artesanal</option>
+                        <option value="105">Elementos de decoracion</option>
+                        </select>
                 </div>
                 <div class="button-div">
                     <button class="save" id="save" type="submit">Guardar Registro</button>
@@ -54,6 +60,15 @@
                 <div>
                     <label for="description">Receta</label>
                     <textarea name="description" id="description" rows="10" cols="100"></textarea>
+                </div>
+                <div>
+                    <select class="edit-category" name="category" id="category">
+                        <option class="menu" value="" disabled selected>Categoria</option>
+                        <option value="201">Postre</option>
+                        <option value="202">Plato fuerte</option>
+                        <option value="203">Coctel</option>
+                        <option value="204">Cobertura</option>
+                        </select>
                 </div>
                 <div class="button-div">
                     <button class="save" id="save" type="submit">Guardar Registro</button>
