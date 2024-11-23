@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>digitalizacion</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Inicio</a>
+        <a href="digitalizacion.html">digitalizacion items</a>
+    </div>
+
+    <header id="mainHeader">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menú</span>
+    </header>
+
+    <main class="main-container" id="main">
+        <!-- Columna 1: Formulario de Subir cliente -->
+        <section class="column" id="taskFormContainer">
+            <form id="taskFormcliente" action="./assets/php/cliente.php" method="post">
+                <h2>Subir Inmobiliaria</h2>
+                <div>
+                    <label for="id_cliente">documento cliente:</label>
+                    <input type="number" name="id_cliente" id="id_cliente" required>
+                </div>
+                <div>
+                    <label for="nombre">Nombre cliente:</label>
+                    <input type="text" id="nombre" name="nombre" maxlength="10" required>
+                </div>
+                <div>
+                    <label for="telefono">celular cliente:</label>
+                    <input type="number" id="telefono" name="telefono" maxlength="10" required>
+                </div>
+                <div>
+                    <label for="email">correo cliente:</label>
+                    <input type="email" id="email" name="email" maxlength="150" required>
+                </div>
+                <div class="button-div">
+                    <button class="save" id="savecliente" type="submit">Guardar Registro</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+        }
+    </script>
+</body>
+</html>
