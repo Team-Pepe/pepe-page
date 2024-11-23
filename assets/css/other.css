@@ -1,0 +1,58 @@
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Panel de fotos */
+.photo-panel {
+    width: 100%;
+    height: 300px;
+    background-color: #222;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.photo-panel img {
+    width: 100%;
+    object-fit: cover;
+    animation: slide 10s infinite;
+}
+
+@keyframes slide {
+    0%, 33% {
+        transform: translateX(0);
+    }
+    34%, 66% {
+        transform: translateX(-100%);
+    }
+    67%, 100% {
+        transform: translateX(-200%);
+    }
+}
+
+/* Botones/bloques */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 90%;
+    margin: 0 auto; /* Centra el contenedor de botones */
+}
+
+.button-container a {
+    flex: 1;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #007BFF;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.button-container a:hover {
+    background-color: #0056b3;
+}
