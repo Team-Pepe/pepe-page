@@ -262,6 +262,17 @@ article{
     padding: 16px;
 }
 
+.submenu {
+    display: none;  /* Oculta el submenú por defecto */
+    padding-left: 20px;  /* Añade sangría */
+}
+
+.submenu a {
+    font-size: 20px;  /* Reduce el tamaño de la fuente para los subitems */
+    color: #bbb;  /* Color más claro para indicar jerarquía */
+}
+
+
 /* El formulario de tareas */
 .task-form label,
 .task-form input,
