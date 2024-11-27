@@ -262,14 +262,23 @@ article{
     padding: 16px;
 }
 
-.submenu {
-    display: none;  /* Oculta el submenú por defecto */
-    padding-left: 20px;  /* Añade sangría */
-}
+/*submenu lateral */
 
 .submenu a {
     font-size: 20px;  /* Reduce el tamaño de la fuente para los subitems */
     color: #bbb;  /* Color más claro para indicar jerarquía */
+}
+
+.submenu {
+    display: none; /* Ocultar submenú por defecto */
+    padding-left: 20px;
+}
+.menu-item {
+    display: flex;
+    align-items: center;
+}
+.menu-item a {
+    margin-right: 5px; /* Espacio entre "Buscadores" y "▼" */
 }
 
 /* El formulario de tareas */
