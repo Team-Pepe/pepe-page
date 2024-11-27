@@ -20,7 +20,7 @@ function editItem(id) {
     var registro = document.getElementById('registro_' + id).value;
     var id_categoria_alquiler = document.getElementById('id_categoria_alquiler_' + id).value;
 
-    xhr.open("POST", "./assets/php/editar_item.php", true);
+    xhr.open("POST", "./assets/php/almacen_editar_item.php", true);
     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 
     xhr.onreadystatechange = function() {
@@ -36,7 +36,7 @@ function editItem(id) {
 function deleteItem(id) {
     if (confirm("¿Estás seguro de que deseas eliminar este registro?")) {
         var xhr = new XMLHttpRequest();
-        xhr.open("POST", "./assets/php/eliminar_item.php", true);
+        xhr.open("POST", "./assets/php/almacen_eliminar_item.php", true);
         xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 
         xhr.onreadystatechange = function() {
