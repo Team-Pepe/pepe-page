@@ -25,6 +25,20 @@
         <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menú</span>
     </header>
 
+    <main class="main-container" id="main">
+        <section class="column" id="taskFormContainer">
+            <h2>Buscador de Repositorio Catering</h2>
+            <form id="searchForm" method="post" onsubmit="return searchItems();">
+                <label for="searchTerm">Buscar item:</label>
+                <input type="text" id="searchTerm" name="searchTerm" required>
+                <button class="clear" type="submit">Buscar</button>
+            </form>
+            <div id="searchResults"></div>
+        </section>
+        
+    </main>
+
     <script src="./assets/js/menu_lateral.js"></script>
+    <script src="./assets/js/solicitud_repositorio.js"></script>
 </body>
 </html>

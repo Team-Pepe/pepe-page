@@ -34,8 +34,8 @@ if (isset($_POST['searchTerm'])) {
                         <option value='104'" . ($row['id_categoria_alquiler'] == '104' ? ' selected' : '') . ">Decoracion artesanal</option>
                         <option value='105'" . ($row['id_categoria_alquiler'] == '105' ? ' selected' : '') . ">Elementos de decoracion</option>
                         </select></p>";
-                echo "<button onclick='editItem($id)'>Editar</button>";
-                echo "<button onclick='deleteItem($id)'>Eliminar</button>";
+                echo "<button class='save' onclick='editItem($id)'>Editar</button>";
+                echo "<button class='delete' onclick='deleteItem($id)'>Eliminar</button>";
                 echo "</div>";
             }
             echo "</div>";
