@@ -28,11 +28,11 @@ if (isset($_POST['searchTerm'])) {
                 echo "<p><strong>Receta:</strong> <input type='text' id='receta_$id' value='" . htmlspecialchars($row['receta']) . "'></p>";
                 echo "<p><strong>Categoria:</strong> <select id='id_categoria_catering_$id' required>
                         <option value='' disabled>Categoria</option>
-                        <option value='201'" . ($row['id_categoria_catering'] == '201' ? ' selected' : '') . ">Entradas</option>
+                        <option value='201'" . ($row['id_categoria_catering'] == '201' ? ' selected' : '') . ">postre</option>
                         <option value='202'" . ($row['id_categoria_catering'] == '202' ? ' selected' : '') . ">Platos fuertes</option>
-                        <option value='203'" . ($row['id_categoria_catering'] == '203' ? ' selected' : '') . ">Postres</option>
-                        <option value='204'" . ($row['id_categoria_catering'] == '204' ? ' selected' : '') . ">Bebidas</option>
-                      </select></p>";
+                        <option value='203'" . ($row['id_categoria_catering'] == '203' ? ' selected' : '') . ">coctel</option>
+                        <option value='204'" . ($row['id_categoria_catering'] == '204' ? ' selected' : '') . ">cubertura</option>
+                        </select></p>";
                 echo "<button class='save' onclick='editItem($id)'>Editar</button>";
                 echo "<button class='delete' onclick='deleteItem($id)'>Eliminar</button>";
                 echo "</div>";
