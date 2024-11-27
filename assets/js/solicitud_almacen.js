@@ -1,7 +1,7 @@
 function searchItems() {
     var searchTerm = document.getElementById("searchTerm").value;
     var xhr = new XMLHttpRequest();
-    xhr.open("POST", "./assets/php/buscador_almacen.php", true);
+    xhr.open("POST", "./assets/php/almacen_buscador.php", true);
     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 
     xhr.onreadystatechange = function() {
