@@ -1,13 +1,11 @@
 function searchItems() {
     var searchTerm = document.getElementById("searchTerm").value;
-    console.log("Término de búsqueda:", searchTerm); // Depuración
     var xhr = new XMLHttpRequest();
     xhr.open("POST", "./assets/php/cliente_buscador.php", true);
     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 
     xhr.onreadystatechange = function() {
         if (xhr.readyState === 4 && xhr.status === 200) {
-            console.log("Respuesta del servidor:", xhr.responseText); // Depuración
             document.getElementById("searchResults").innerHTML = xhr.responseText;
         }
     };
