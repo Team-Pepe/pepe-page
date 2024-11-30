@@ -314,3 +314,19 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+/*
+SELECT ALL * FROM cliente;
+SELECT * FROM cliente WHERE email = 'ejemplo@correo.com' OR telefono = '123456789'; 
+SELECT * FROM almacen_alquiler WHERE id_categoria_alquiler = 1 AND nombre_item = 'Item Ejemplo';
+SELECT * FROM cliente WHERE id_cliente BETWEEN 1 AND 10;
+SELECT COUNT(*) AS total_clientes FROM cliente WHERE telefono IS NOT NULL;
+SELECT MAX(id_alquiler) AS max_id, nombre_item FROM almacen_alquiler GROUP BY nombre_item;
+SELECT nombre_item, COUNT() AS total_items FROM almacen_alquiler GROUP BY nombre_item HAVING COUNT() > 1;
+SELECT * FROM nombre_de_tu_tabla WHERE columna = 'valor';
+SELECT * FROM nombre_de_tu_tabla;
+SELECT DISTINCT columna FROM nombre_de_tu_tabla;
+SELECT * FROM nombre_de_tu_tabla ORDER BY columna ASC;  
+SELECT * FROM nombre_de_tu_tabla ORDER BY columna DESC;
+DELETE FROM nombre_de_tu_tabla WHERE columna =valor;
+*/
