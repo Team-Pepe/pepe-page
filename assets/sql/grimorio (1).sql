@@ -317,16 +317,25 @@ COMMIT;
 
 /*
 SELECT ALL * FROM cliente;
-SELECT * FROM cliente WHERE email = 'ejemplo@correo.com' OR telefono = '123456789'; 
-SELECT * FROM almacen_alquiler WHERE id_categoria_alquiler = 1 AND nombre_item = 'Item Ejemplo';
-SELECT * FROM cliente WHERE id_cliente BETWEEN 1 AND 10;
+
+SELECT * FROM cliente WHERE email = 'pepevargas@gmail.com' OR telefono = '3008901234';
+
+SELECT * FROM cliente WHERE nombre = 'Pepe Carlos' AND telefono = '3004567890';
+
+SELECT * FROM cliente WHERE id_cliente BETWEEN 1244567896 AND 1419876543;
+
 SELECT COUNT(*) AS total_clientes FROM cliente WHERE telefono IS NOT NULL;
+
 SELECT MAX(id_alquiler) AS max_id, nombre_item FROM almacen_alquiler GROUP BY nombre_item;
-SELECT nombre_item, COUNT() AS total_items FROM almacen_alquiler GROUP BY nombre_item HAVING COUNT() > 1;
-SELECT * FROM nombre_de_tu_tabla WHERE columna = 'valor';
-SELECT * FROM nombre_de_tu_tabla;
-SELECT DISTINCT columna FROM nombre_de_tu_tabla;
-SELECT * FROM nombre_de_tu_tabla ORDER BY columna ASC;  
-SELECT * FROM nombre_de_tu_tabla ORDER BY columna DESC;
-DELETE FROM nombre_de_tu_tabla WHERE columna =valor;
+
+SELECT email, COUNT(*) AS total_clientes FROM cliente GROUP BY email HAVING COUNT(*) > 1;
+
+SELECT MIN(id_cliente) AS minimo_id, nombre, telefono, email FROM cliente;
+
+SELECT DISTINCT nombre FROM cliente;
+
+SELECT * FROM cliente ORDER BY cliente ASC;
+
+SELECT * FROM cliente ORDER BY cliente DESC;
+
 */
