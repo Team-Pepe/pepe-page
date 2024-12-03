@@ -11,9 +11,28 @@
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="index.html">Inicio</a>
-        <a href="crear_tareas.html">Subir Tarea</a>
-        <a href="lista_tareas.html">Lista de Tareas</a>
-        <a href="tareas_finalizadas.html">Tareas finalizadas</a>
+        <a href="digitalizacion.html">Digitalización Items</a>
+        <a href="clientes.html">Digitalización Usuarios</a>
+        <!-- Contenedor para "Buscadores" y "▼" juntos -->
+        <div class="menu-item">
+            <a href="buscador_index.html">Buscadores</a>
+            <a href="javascript:void(0)" onclick="toggleSubMenu()">▼</a>
+        </div>
+        <div id="subMenu" class="submenu">
+            <a href="buscador_almacen.html">Buscador Almacén</a>
+            <a href="buscador_cliente.html">Buscador Cliente</a>
+            <a href="buscador_repositorio.html">Buscador Repositorio</a>
+        </div>
+        <!-- Contenedor para "tareas" y "▼" juntos -->
+        <div class="menu-item">
+            <a href="index_todo.html">Tareas</a>
+            <a href="javascript:void(0)" onclick="toggleSubMenu2()">▼</a>
+        </div>
+        <div id="subMenu2" class="submenu2">
+            <a href="crear_tareas.html">Crear Tareas</a>
+            <a href="lista_tareas.html">Lista Tareas</a>
+            <a href="tareas_finalizadas.html">Tareas Finalizadas</a>
+        </div>
     </div>
 
     <header id="mainHeader">
@@ -30,18 +49,8 @@
 
     <footer></footer>
     
-    <script>
-        function openNav() {
-            document.getElementById("mySidenav").style.width = "250px";
-            document.getElementById("main").style.marginLeft = "250px";
-        }
-
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-            document.getElementById("main").style.marginLeft= "0";
-        }
-    </script>
     <script src="./assets/js/app.js"></script>
     <script src="./assets/js/render_lista.js"></script>
+    <script src="./assets/js/menu_lateral.js"></script>
 </body>
 </html>

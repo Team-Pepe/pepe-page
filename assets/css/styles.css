@@ -591,6 +591,85 @@ tbody td:hover {
     }
 }
 
+/* Media Query para pantallas con resolución mínima de 1920x1080 */
+@media (min-width: 1920px) {
+    body {
+        font-size: 1.8rem; /* Aumenta el tamaño de la fuente */
+    }
+
+    .main-container {
+        max-width: 1400px; /* Ancho máximo del contenedor principal */
+        margin: 0 auto; /* Centrar el contenido */
+        gap: 40px; /* Espaciado mayor entre columnas */
+    }
+
+    .column {
+        flex: 1;
+        padding: 30px; /* Mayor espaciado interno */
+        min-height: 600px; /* Aumenta la altura mínima */
+    }
+
+    .task-form, 
+    .calendar {
+        padding: 40px; /* Mayor espaciado interno */
+        max-width: 100%; /* Asegura que ocupe todo el ancho disponible */
+        font-size: 1.2rem; /* Fuente más grande */
+    }
+
+    /* Ajuste de tamaño para los artículos (task cards) */
+    article {
+        width: 100%;
+        font-size: 1.4rem; /* Fuente más grande */
+        padding: 24px 36px;
+        margin-bottom: 24px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+    }
+
+    /* Ajuste de la tabla del calendario */
+    table {
+        font-size: 1.3rem; /* Aumenta el tamaño de la fuente */
+    }
+
+    th, td {
+        padding: 18px; /* Aumenta el relleno para mejorar la legibilidad */
+    }
+
+    .task-form .button-div button {
+        width: 240px; /* Botones más grandes */
+        height: 48px;
+        font-size: 1.2rem; /* Fuente más grande */
+    }
+
+    /* Carrusel */
+    .carousel {
+        max-height: 600px; /* Aumenta la altura del carrusel */
+    }
+
+    .carousel-item {
+        max-height: 600px;
+    }
+
+    .carousel-item img {
+        max-height: 600px;
+    }
+
+    /* Ajuste de botones */
+    .button-container a {
+        padding: 30px;
+        font-size: 1.4rem; /* Fuente más grande */
+    }
+
+    /* Ajuste de menú lateral */
+    .sidenav a {
+        font-size: 28px; /* Aumenta el tamaño de los enlaces */
+    }
+
+    .submenu a, .submenu2 a {
+        font-size: 24px; /* Aumenta el tamaño de los subitems */
+    }
+}
+
+
 /* Media Query para pantallas con resolución mínima de 1366x768 */
 @media (min-width: 1366px) and (max-width: 1440px) {
     body {
@@ -652,3 +731,4 @@ tbody td:hover {
         font-size: 1.2rem;
     }
 }
+
