@@ -590,3 +590,65 @@ tbody td:hover {
         max-width: 100%; 
     }
 }
+
+/* Media Query para pantallas con resolución mínima de 1366x768 */
+@media (min-width: 1366px) and (max-width: 1440px) {
+    body {
+        font-size: 1.6rem; /* Tamaño de fuente ligeramente mayor */
+    }
+
+    .main-container {
+        max-width: 1200px; /* Ancho máximo del contenedor principal */
+        margin: 0 auto; /* Centrar el contenido */
+        gap: 30px; /* Espaciado mayor entre columnas */
+    }
+
+    .column {
+        flex: 1; /* Ajuste flexible para ocupar el espacio disponible */
+        padding: 24px; /* Espaciado interno mayor */
+        min-height: 500px; /* Altura mínima de cada columna */
+    }
+
+    .task-form, 
+    .calendar {
+        padding: 30px;
+        max-width: 100%;
+    }
+
+    /* Ajuste de tamaño para el artículo (task cards) */
+    article {
+        width: 100%;
+        font-size: 1.2rem; /* Fuente ligeramente más grande */
+        padding: 20px 30px;
+        margin-bottom: 24px;
+    }
+
+    /* Ajuste de la tabla del calendario */
+    table {
+        font-size: 1.1rem; /* Aumentar tamaño de la fuente */
+    }
+
+    th, td {
+        padding: 14px; /* Aumentar el relleno para mejorar legibilidad */
+    }
+
+    .task-form .button-div button {
+        width: 220px; /* Botones más grandes */
+        height: 44px;
+    }
+
+    /* Carrusel */
+    .carousel-item {
+        max-height: 500px; /* Altura del carrusel ajustada */
+    }
+
+    .carousel-item img {
+        max-height: 500px;
+    }
+
+    /* Ajuste de botones */
+    .button-container a {
+        padding: 24px;
+        font-size: 1.2rem;
+    }
+}
