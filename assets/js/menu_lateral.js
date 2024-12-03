@@ -16,3 +16,12 @@ function toggleSubMenu() {
         subMenu.style.display = "block";
     }
 }
+
+function toggleSubMenu2() {
+    var subMenu2 = document.getElementById("subMenu2");
+    if (subMenu2.style.display === "block") {
+        subMenu2.style.display = "none";
+    } else {
+        subMenu2.style.display = "block";
+    }
+}
